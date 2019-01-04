@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SportsMeetingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Pwd" Type="varchar" MaxLength="20" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="20" />
+          <Property Name="Content" Type="text" />
+          <Property Name="ClickNum" Type="int" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Referee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Pwd" Type="varchar" MaxLength="20" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignUp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ItemId" Type="int" />
+          <Property Name="ManId" Type="int" />
+          <Property Name="FirstScore" Type="varchar" MaxLength="50" />
+          <Property Name="FinalScore" Type="varchar" MaxLength="50" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SportsItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Type" Type="varchar" MaxLength="20" />
+          <Property Name="RefereeId" Type="int" />
+          <Property Name="FirstTime" Type="datetime" />
+          <Property Name="FinalTime" Type="datetime" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SportsMan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Age" Type="varchar" MaxLength="20" />
+          <Property Name="Sex" Type="varchar" MaxLength="20" />
+          <Property Name="Team" Type="varchar" MaxLength="20" />
+          <Property Name="Class" Type="varchar" MaxLength="20" />
+          <Property Name="OperTime" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_SignUp_SportsItem">
+          <End Role="SportsItem" Type="Self.SportsItem" Multiplicity="0..1" />
+          <End Role="SignUp" Type="Self.SignUp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportsItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SignUp">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignUp_SportsMan">
+          <End Role="SportsMan" Type="Self.SportsMan" Multiplicity="0..1" />
+          <End Role="SignUp" Type="Self.SignUp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportsMan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SignUp">
+              <PropertyRef Name="ManId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SportsItem_Referee">
+          <End Role="Referee" Type="Self.Referee" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SportsItem" Type="Self.SportsItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Referee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SportsItem">
+              <PropertyRef Name="RefereeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportsMeetingModelStoreContainer">
+          <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Referee" EntityType="Self.Referee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignUp" EntityType="Self.SignUp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SportsItem" EntityType="Self.SportsItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SportsMan" EntityType="Self.SportsMan" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_SignUp_SportsItem" Association="Self.FK_SignUp_SportsItem">
+            <End Role="SportsItem" EntitySet="SportsItem" />
+            <End Role="SignUp" EntitySet="SignUp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignUp_SportsMan" Association="Self.FK_SignUp_SportsMan">
+            <End Role="SportsMan" EntitySet="SportsMan" />
+            <End Role="SignUp" EntitySet="SignUp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SportsItem_Referee" Association="Self.FK_SportsItem_Referee">
+            <End Role="Referee" EntitySet="Referee" />
+            <End Role="SportsItem" EntitySet="SportsItem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SportsMeetingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClickNum" Type="Int32" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SignUp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ItemId" Type="Int32" />
+          <Property Name="ManId" Type="Int32" />
+          <Property Name="FirstScore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FinalScore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="SportsItem" Relationship="SportsMeetingModel.FK_SignUp_SportsItem" FromRole="SignUp" ToRole="SportsItem" />
+          <NavigationProperty Name="SportsMan" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SignUp" ToRole="SportsMan" />
+        </EntityType>
+        <EntityType Name="SportsItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FirstTime" Type="DateTime" Precision="3" />
+          <Property Name="FinalTime" Type="DateTime" Precision="3" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="SignUp" Relationship="SportsMeetingModel.FK_SignUp_SportsItem" FromRole="SportsItem" ToRole="SignUp" />
+          <Property Name="RefereeId" Type="Int32" />
+          <NavigationProperty Name="Referee" Relationship="SportsMeetingModel.FK_SportsItem_Referee" FromRole="SportsItem" ToRole="Referee" />
+        </EntityType>
+        <EntityType Name="SportsMan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Sex" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Team" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="SignUp" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SportsMan" ToRole="SignUp" />
+        </EntityType>
+        <EntityContainer Name="SportsMeetingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin" EntityType="Self.Admin" />
+          <EntitySet Name="News" EntityType="Self.News" />
+          <EntitySet Name="SignUp" EntityType="Self.SignUp" />
+          <EntitySet Name="SportsItem" EntityType="Self.SportsItem" />
+          <EntitySet Name="SportsMan" EntityType="Self.SportsMan" />
+          <AssociationSet Name="FK_SignUp_SportsItem" Association="SportsMeetingModel.FK_SignUp_SportsItem">
+            <End Role="SportsItem" EntitySet="SportsItem" />
+            <End Role="SignUp" EntitySet="SignUp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignUp_SportsMan" Association="SportsMeetingModel.FK_SignUp_SportsMan">
+            <End Role="SportsMan" EntitySet="SportsMan" />
+            <End Role="SignUp" EntitySet="SignUp" />
+          </AssociationSet>
+          <EntitySet Name="Referee" EntityType="SportsMeetingModel.Referee" />
+          <AssociationSet Name="FK_SportsItem_Referee" Association="SportsMeetingModel.FK_SportsItem_Referee">
+            <End Role="Referee" EntitySet="Referee" />
+            <End Role="SportsItem" EntitySet="SportsItem" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK_SignUp_SportsItem">
+          <End Type="SportsMeetingModel.SportsItem" Role="SportsItem" Multiplicity="0..1" />
+          <End Type="SportsMeetingModel.SignUp" Role="SignUp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportsItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SignUp">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignUp_SportsMan">
+          <End Type="SportsMeetingModel.SportsMan" Role="SportsMan" Multiplicity="0..1" />
+          <End Type="SportsMeetingModel.SignUp" Role="SignUp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportsMan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SignUp">
+              <PropertyRef Name="ManId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Referee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="OperTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="SportsItem" Relationship="SportsMeetingModel.FK_SportsItem_Referee" FromRole="Referee" ToRole="SportsItem" />
+        </EntityType>
+        <Association Name="FK_SportsItem_Referee">
+          <End Type="SportsMeetingModel.Referee" Role="Referee" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SportsMeetingModel.SportsItem" Role="SportsItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Referee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SportsItem">
+              <PropertyRef Name="RefereeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SportsMeetingModelStoreContainer" CdmEntityContainer="SportsMeetingEntities">
+          <EntitySetMapping Name="Admin">
+            <EntityTypeMapping TypeName="SportsMeetingModel.Admin">
+              <MappingFragment StoreEntitySet="Admin">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="SportsMeetingModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="ClickNum" ColumnName="ClickNum" />
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignUp">
+            <EntityTypeMapping TypeName="SportsMeetingModel.SignUp">
+              <MappingFragment StoreEntitySet="SignUp">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ManId" ColumnName="ManId" />
+                <ScalarProperty Name="FirstScore" ColumnName="FirstScore" />
+                <ScalarProperty Name="FinalScore" ColumnName="FinalScore" />
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SportsItem">
+            <EntityTypeMapping TypeName="SportsMeetingModel.SportsItem">
+              <MappingFragment StoreEntitySet="SportsItem">
+                <ScalarProperty Name="RefereeId" ColumnName="RefereeId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="FirstTime" ColumnName="FirstTime" />
+                <ScalarProperty Name="FinalTime" ColumnName="FinalTime" />
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SportsMan">
+            <EntityTypeMapping TypeName="SportsMeetingModel.SportsMan">
+              <MappingFragment StoreEntitySet="SportsMan">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Team" ColumnName="Team" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Referee">
+            <EntityTypeMapping TypeName="SportsMeetingModel.Referee">
+              <MappingFragment StoreEntitySet="Referee">
+                <ScalarProperty Name="OperTime" ColumnName="OperTime" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
