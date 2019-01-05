@@ -71,6 +71,7 @@
     <Content Include="AdminPage\images\aiwrap.png" />
     <Content Include="AdminPage\images\bg.png" />
     <Content Include="AdminPage\Index.aspx" />
+    <Content Include="AdminPage\js\jquery.min.js" />
     <Content Include="AdminPage\js\xadmin.js" />
     <Content Include="AdminPage\js\xcity.js" />
     <Content Include="AdminPage\lib\layui\css\layui.css" />
@@ -175,6 +176,8 @@
     <Content Include="AdminPage\lib\layui\lay\modules\upload.js" />
     <Content Include="AdminPage\lib\layui\lay\modules\util.js" />
     <Content Include="AdminPage\Login.aspx" />
+    <Content Include="AdminPage\SportsItem\Add.aspx" />
+    <Content Include="AdminPage\SportsItem\Manage.aspx" />
     <Content Include="FrontPage\Assets\css\reset.css" />
     <Content Include="FrontPage\Assets\css\responsive.css" />
     <Content Include="FrontPage\Assets\css\thems.css" />
@@ -246,6 +249,7 @@
       <LastGenOutput>SportsMeeting.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
+    <Content Include="AdminPage\Welcome.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs">
@@ -264,6 +268,20 @@
     </Compile>
     <Compile Include="AdminPage\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SportsItem\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SportsItem\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SportsItem\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SportsItem\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Common\ValidateCode.cs" />
     <Compile Include="DBContextFactory.cs" />
@@ -307,6 +325,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SportsMeeting.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

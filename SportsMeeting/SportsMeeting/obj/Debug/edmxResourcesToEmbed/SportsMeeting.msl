@@ -50,6 +50,7 @@
     <EntitySetMapping Name="SportsMan">
       <EntityTypeMapping TypeName="SportsMeetingModel.SportsMan">
         <MappingFragment StoreEntitySet="SportsMan">
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Age" ColumnName="Age" />

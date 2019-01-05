@@ -9,3 +9,14 @@ E:\DevelopmentSelf\SportsMeeting\SportsMeeting\SportsMeeting\bin\zh-Hans\EntityF
 E:\DevelopmentSelf\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.csprojResolveAssemblyReference.cache
 E:\DevelopmentSelf\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.dll
 E:\DevelopmentSelf\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.pdb
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\SportsMeeting.dll.config
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\SportsMeeting.dll
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\SportsMeeting.pdb
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\EntityFramework.dll
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\EntityFramework.SqlServer.dll
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\EntityFramework.xml
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\EntityFramework.SqlServer.xml
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\bin\zh-Hans\EntityFramework.resources.dll
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.csprojResolveAssemblyReference.cache
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.dll
+E:\Development\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.pdb

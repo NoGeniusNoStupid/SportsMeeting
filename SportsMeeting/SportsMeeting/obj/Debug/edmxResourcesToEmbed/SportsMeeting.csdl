@@ -58,6 +58,7 @@
     <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="OperTime" Type="DateTime" Precision="3" />
     <NavigationProperty Name="SignUp" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SportsMan" ToRole="SignUp" />
+    <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="SportsMeetingEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admin" EntityType="Self.Admin" />

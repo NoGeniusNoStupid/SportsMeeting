@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace SportsMeeting.AdminPage {
+namespace SportsMeeting.AdminPage.SportsItem {
     
     
-    public partial class Index {
+    public partial class Manage {
     }
 }

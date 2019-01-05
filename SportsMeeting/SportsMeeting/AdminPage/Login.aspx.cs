@@ -7,18 +7,26 @@ using System.Web.UI.WebControls;
 
 namespace SportsMeeting.AdminPage
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : PageBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        //登陆代码
+        //登陆功能实现
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            //登陆功能实现
-
+          
+            string name = username.Text;
+            string pwd = password.Text;
+            //查询数据
+            var admin = Entity.Admin.FirstOrDefault(a => a.Name == name && a.Pwd == pwd);
+            if (admin == null)
+            {
+                Message("用户名或密码错误！");
+                return;
+            }
+            Session["ManId"] = admin.Id;
 
             Response.Redirect("/AdminPage/Index.aspx");
         }

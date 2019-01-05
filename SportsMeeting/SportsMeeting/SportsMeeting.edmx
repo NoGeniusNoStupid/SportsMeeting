@@ -62,6 +62,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Pwd" Type="varchar" MaxLength="20" />
           <Property Name="Age" Type="varchar" MaxLength="20" />
           <Property Name="Sex" Type="varchar" MaxLength="20" />
           <Property Name="Team" Type="varchar" MaxLength="20" />
@@ -188,6 +189,7 @@
           <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="OperTime" Type="DateTime" Precision="3" />
           <NavigationProperty Name="SignUp" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SportsMan" ToRole="SignUp" />
+          <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="SportsMeetingEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admin" EntityType="Self.Admin" />
@@ -312,6 +314,7 @@
           <EntitySetMapping Name="SportsMan">
             <EntityTypeMapping TypeName="SportsMeetingModel.SportsMan">
               <MappingFragment StoreEntitySet="SportsMan">
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Age" ColumnName="Age" />

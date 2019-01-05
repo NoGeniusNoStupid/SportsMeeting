@@ -10,6 +10,6 @@
 namespace SportsMeeting.AdminPage {
     
     
-    public partial class Index {
+    public partial class welcome {
     }
 }
