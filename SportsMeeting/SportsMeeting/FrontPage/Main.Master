@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="SportsMeeting.FrontPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>黑色通用服务公司响应式网站模板</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css" />
+    <script type="text/javascript" src="Assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="Assets/js/js_z.js"></script>
+    <script type="text/javascript" src="Assets/js/banner.js"></script>
+    <link rel="stylesheet" type="text/css" href="Assets/css/thems.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/responsive.css">
+    <script language="javascript">
+        $(function () {
+            $('#owl-demo').owlCarousel({
+                items: 1,
+                navigation: true,
+                navigationText: ["上一个", "下一个"],
+                autoPlay: true,
+                stopOnHover: true
+            }).hover(function () {
+                $('.owl-buttons').show();
+            }, function () {
+                $('.owl-buttons').hide();
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="header">
+        <div class="head clearfix">
+            <div class="logo">
+                <a href="">
+                    <img src="Assets/images/logo2.png" alt="" /></a>
+            </div>
+            <div class="head_r clearfix">
+                <div class="search">
+                    <input name="" type="text">
+                    <input name="" type="submit" value="">
+                </div>
+                <div class="nav_m">
+                    <div class="n_icon">导航栏</div>
+                    <ul class="nav clearfix">
+                        <li class="now"><a href="Default.aspx">首页</a></li>
+                        <li><a href="news.html">新闻中心</a></li>
+                        <li><a href="OnlineSignUp.aspx">网上报名</a></li>
+                        <li><a href="join.html">项目赛况</a></li>
+                        <% if (Session["ManId"] == null)
+                           { %>
+                        <li><a href="Register.aspx">注册</a></li>
+                        <li><a href="Login.aspx">登陆</a></li>
+                        <%}
+                           else
+                           { %>
+                        <li class="er"><a href="service.html">个人中心</a></li>
+                        <li><a href="Default.aspx?type='out'">退出</a></li>
+                        <%} %>
+                    </ul>
+                    <div class="er_m">
+                        <div class="hx">
+                            <i>&nbsp;</i>
+                            <div class="b_head">
+                                个人中心<em>Core business</em>
+                            </div>
+                            <div class="hx_m clearfix">
+                                <ul class="hx_ml">
+                                    <li><a href="">报名结果</a></li>
+                                    <li><a href="">我的成绩</a></li>
+                                </ul>
+                                <div class="hx_mr">
+                                    <img src="Assets/upload/pic3.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--幻灯片-->
+    <div id="banner" class="banner">
+        <div id="owl-demo" class="owl-carousel">
+            <a class="item" target="_blank" href="" style="background-image: url(Assets/upload/banner1.jpg)">
+                <img src="Assets/upload/banner1.jpg" alt="">
+            </a>
+            <a class="item" target="_blank" href="" style="background-image: url(Assets/upload/banner2.jpg)">
+                <img src="Assets/upload/banner2.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!--幻灯片-->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <div class="fn_bg">
+        <ul class="f_nav clearfix">
+            <li>
+                <a href="">
+                    <img src="Assets/images/f_1.png" alt="" />
+                    <span>联系我们</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Assets/images/f_3.png" alt="" />
+                    <span>在线客服</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Assets/images/f_4.png" alt="" />
+                    <span>关注我们</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Assets/images/f_5.png" alt="" />
+                    <span>一键分享</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="bq">Copyright © 2019  运动会网站首页  <a href="../AdminPage/Login.aspx">后台管理</a>   </div>
+</body>
+</html>

@@ -15,8 +15,10 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="varchar" MaxLength="20" />
+    <Property Name="Type" Type="varchar" MaxLength="20" />
     <Property Name="Content" Type="text" />
     <Property Name="ClickNum" Type="int" />
+    <Property Name="Image" Type="varchar" MaxLength="50" />
     <Property Name="OperTime" Type="datetime" />
   </EntityType>
   <EntityType Name="Referee">
@@ -24,8 +26,12 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account" Type="varchar" MaxLength="20" />
     <Property Name="Name" Type="varchar" MaxLength="20" />
     <Property Name="Pwd" Type="varchar" MaxLength="20" />
+    <Property Name="Age" Type="varchar" MaxLength="20" />
+    <Property Name="Tel" Type="varchar" MaxLength="20" />
+    <Property Name="Sex" Type="varchar" MaxLength="20" />
     <Property Name="OperTime" Type="datetime" />
   </EntityType>
   <EntityType Name="SignUp">
@@ -35,8 +41,11 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ItemId" Type="int" />
     <Property Name="ManId" Type="int" />
-    <Property Name="FirstScore" Type="varchar" MaxLength="50" />
-    <Property Name="FinalScore" Type="varchar" MaxLength="50" />
+    <Property Name="FirstScore" Type="varchar" MaxLength="10" />
+    <Property Name="FinalScore" Type="varchar" MaxLength="10" />
+    <Property Name="State" Type="varchar" MaxLength="10" />
+    <Property Name="Rand" Type="varchar" MaxLength="10" />
+    <Property Name="Detail" Type="varchar" MaxLength="50" />
     <Property Name="OperTime" Type="datetime" />
   </EntityType>
   <EntityType Name="SportsItem">
@@ -56,12 +65,14 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account" Type="varchar" MaxLength="20" />
     <Property Name="Name" Type="varchar" MaxLength="20" />
     <Property Name="Pwd" Type="varchar" MaxLength="20" />
     <Property Name="Age" Type="varchar" MaxLength="20" />
     <Property Name="Sex" Type="varchar" MaxLength="20" />
     <Property Name="Team" Type="varchar" MaxLength="20" />
     <Property Name="Class" Type="varchar" MaxLength="20" />
+    <Property Name="Tel" Type="varchar" MaxLength="20" />
     <Property Name="OperTime" Type="datetime" />
   </EntityType>
   <Association Name="FK_SignUp_SportsItem">

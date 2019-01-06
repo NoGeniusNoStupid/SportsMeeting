@@ -148,20 +148,20 @@
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe723;</i>
-                        <cite>运动会项目管理</cite>
+                        <cite>裁判管理</cite>
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="/AdminPage/SportsItem/Add.aspx">
+                            <a _href="/AdminPage//RefereePage/Add.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>项目添加</cite>
+                                <cite>添加裁判</cite>
                             </a>
                         </li>
-                        <li>
-                            <a _href="/AdminPage/SportsItem/Manage.aspx">
+                         <li>
+                            <a _href="/AdminPage//RefereePage/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>项目管理</cite>
+                                <cite>裁判管理</cite>
                             </a>
                         </li>
                     </ul>
@@ -169,18 +169,25 @@
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe723;</i>
-                        <cite>分类管理</cite>
+                        <cite>运动会项目管理</cite>
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="cate.html">
+                            <a _href="/AdminPage/SportsItemPage/Add.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>多级分类</cite>
+                                <cite>项目添加</cite>
+                            </a>
+                        </li>
+                        <li>
+                            <a _href="/AdminPage/SportsItemPage/Manage.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>项目管理</cite>
                             </a>
                         </li>
                     </ul>
                 </li>
+                
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe723;</i>

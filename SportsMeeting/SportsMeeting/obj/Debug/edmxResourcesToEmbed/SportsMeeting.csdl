@@ -18,6 +18,8 @@
     <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="ClickNum" Type="Int32" />
     <Property Name="OperTime" Type="DateTime" Precision="3" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="SignUp">
     <Key>
@@ -26,11 +28,14 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ItemId" Type="Int32" />
     <Property Name="ManId" Type="Int32" />
-    <Property Name="FirstScore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="FinalScore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FirstScore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FinalScore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="OperTime" Type="DateTime" Precision="3" />
     <NavigationProperty Name="SportsItem" Relationship="SportsMeetingModel.FK_SignUp_SportsItem" FromRole="SignUp" ToRole="SportsItem" />
     <NavigationProperty Name="SportsMan" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SignUp" ToRole="SportsMan" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Rand" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Detail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="SportsItem">
     <Key>
@@ -59,6 +64,8 @@
     <Property Name="OperTime" Type="DateTime" Precision="3" />
     <NavigationProperty Name="SignUp" Relationship="SportsMeetingModel.FK_SignUp_SportsMan" FromRole="SportsMan" ToRole="SignUp" />
     <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="SportsMeetingEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admin" EntityType="Self.Admin" />
@@ -113,6 +120,10 @@
     <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="OperTime" Type="DateTime" Precision="3" />
     <NavigationProperty Name="SportsItem" Relationship="SportsMeetingModel.FK_SportsItem_Referee" FromRole="Referee" ToRole="SportsItem" />
+    <Property Name="Age" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sex" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FK_SportsItem_Referee">
     <End Type="SportsMeetingModel.Referee" Role="Referee" Multiplicity="0..1">

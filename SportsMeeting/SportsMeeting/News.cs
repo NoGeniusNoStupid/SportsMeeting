@@ -19,5 +19,7 @@ namespace SportsMeeting
         public string Content { get; set; }
         public Nullable<int> ClickNum { get; set; }
         public Nullable<System.DateTime> OperTime { get; set; }
+        public string Type { get; set; }
+        public string Image { get; set; }
     }
 }

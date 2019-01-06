@@ -27,6 +27,8 @@ namespace SportsMeeting
         public string Class { get; set; }
         public Nullable<System.DateTime> OperTime { get; set; }
         public string Pwd { get; set; }
+        public string Tel { get; set; }
+        public string Account { get; set; }
     
         public virtual ICollection<SignUp> SignUp { get; set; }
     }

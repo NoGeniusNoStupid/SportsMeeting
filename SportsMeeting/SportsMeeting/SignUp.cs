@@ -20,6 +20,9 @@ namespace SportsMeeting
         public string FirstScore { get; set; }
         public string FinalScore { get; set; }
         public Nullable<System.DateTime> OperTime { get; set; }
+        public string State { get; set; }
+        public string Rand { get; set; }
+        public string Detail { get; set; }
     
         public virtual SportsItem SportsItem { get; set; }
         public virtual SportsMan SportsMan { get; set; }

@@ -14,6 +14,8 @@
     <EntitySetMapping Name="News">
       <EntityTypeMapping TypeName="SportsMeetingModel.News">
         <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
@@ -25,6 +27,9 @@
     <EntitySetMapping Name="SignUp">
       <EntityTypeMapping TypeName="SportsMeetingModel.SignUp">
         <MappingFragment StoreEntitySet="SignUp">
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Rand" ColumnName="Rand" />
+          <ScalarProperty Name="State" ColumnName="State" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ItemId" ColumnName="ItemId" />
           <ScalarProperty Name="ManId" ColumnName="ManId" />
@@ -50,6 +55,8 @@
     <EntitySetMapping Name="SportsMan">
       <EntityTypeMapping TypeName="SportsMeetingModel.SportsMan">
         <MappingFragment StoreEntitySet="SportsMan">
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
           <ScalarProperty Name="Pwd" ColumnName="Pwd" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -64,6 +71,10 @@
     <EntitySetMapping Name="Referee">
       <EntityTypeMapping TypeName="SportsMeetingModel.Referee">
         <MappingFragment StoreEntitySet="Referee">
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
           <ScalarProperty Name="OperTime" ColumnName="OperTime" />
           <ScalarProperty Name="Pwd" ColumnName="Pwd" />
           <ScalarProperty Name="Name" ColumnName="Name" />

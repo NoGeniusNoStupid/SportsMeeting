@@ -65,6 +65,318 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPage\NewsPage\ckeditor\adapters\jquery.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\build-config.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\ckeditor.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\config.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\contents.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\af.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ar.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\az.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\bg.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\bn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\bs.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\cs.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\cy.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\da.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\de-ch.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\de.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\el.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\en-au.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\en-ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\en-gb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\en.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\eo.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\es-mx.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\es.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\et.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\eu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\fa.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\fi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\fo.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\fr-ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\fr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\gl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\gu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\he.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\hi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\hr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\hu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\id.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\is.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\it.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ja.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ka.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\km.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ko.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ku.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\lt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\lv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\mk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\mn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ms.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\nb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\nl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\no.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\oc.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\pl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\pt-br.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\pt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ro.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ru.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\si.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sq.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sr-latn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\sv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\th.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\tr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\tt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\ug.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\uk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\vi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\zh-cn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\lang\zh.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\en-au.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\icons.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\dialogs\dialog.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ro.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\widget\images\handle.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\css\samples.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\github-top.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\header-bg.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\header-separator.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\logo.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\logo.svg" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\index.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\js\sample.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\js\sf.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\ajax.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\api.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\appendto.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\divreplace.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\index.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\inlineall.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\jquery.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\readonly.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\sample.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\sample.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\tabindex.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\uicolor.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="AdminPage\NewsPage\ckeditor\styles.js" />
     <Content Include="AdminPage\css\font.css" />
     <Content Include="AdminPage\css\xadmin.css" />
     <Content Include="AdminPage\fonts\iconfont.svg" />
@@ -176,8 +488,14 @@
     <Content Include="AdminPage\lib\layui\lay\modules\upload.js" />
     <Content Include="AdminPage\lib\layui\lay\modules\util.js" />
     <Content Include="AdminPage\Login.aspx" />
-    <Content Include="AdminPage\SportsItem\Add.aspx" />
-    <Content Include="AdminPage\SportsItem\Manage.aspx" />
+    <Content Include="AdminPage\NewsPage\Add.aspx" />
+    <Content Include="AdminPage\NewsPage\Manage.aspx" />
+    <Content Include="AdminPage\RefereePage\Add.aspx" />
+    <Content Include="AdminPage\RefereePage\Manage.aspx" />
+    <Content Include="AdminPage\SignUp\Manage.aspx" />
+    <Content Include="AdminPage\SportsItemPage\Add.aspx" />
+    <Content Include="AdminPage\SportsItemPage\Manage.aspx" />
+    <Content Include="AdminPage\SportsMan\Manage.aspx" />
     <Content Include="FrontPage\Assets\css\reset.css" />
     <Content Include="FrontPage\Assets\css\responsive.css" />
     <Content Include="FrontPage\Assets\css\thems.css" />
@@ -206,6 +524,7 @@
     <Content Include="FrontPage\Assets\images\icon8.png" />
     <Content Include="FrontPage\Assets\images\icon9.png" />
     <Content Include="FrontPage\Assets\images\logo.png" />
+    <Content Include="FrontPage\Assets\images\logo2.png" />
     <Content Include="FrontPage\Assets\images\movie.ogg" />
     <Content Include="FrontPage\Assets\images\nav_ico.png" />
     <Content Include="FrontPage\Assets\images\next.png" />
@@ -237,6 +556,14 @@
     <Content Include="FrontPage\Assets\upload\pic7.jpg" />
     <Content Include="FrontPage\Assets\upload\pic8.jpg" />
     <Content Include="FrontPage\Assets\upload\pic9.jpg" />
+    <Content Include="FrontPage\Assets\upload\运动1_副本.jpg" />
+    <Content Include="FrontPage\Assets\upload\banner2.jpg" />
+    <Content Include="FrontPage\Assets\upload\运动4_副本.jpg" />
+    <Content Include="FrontPage\Assets\upload\banner1.jpg" />
+    <Content Include="FrontPage\Default.aspx" />
+    <Content Include="FrontPage\Login.aspx" />
+    <Content Include="FrontPage\OnlineSignUp.aspx" />
+    <Content Include="FrontPage\Register.aspx" />
     <Content Include="PageBase.aspx" />
     <Content Include="SportsMeeting.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -269,22 +596,101 @@
     <Compile Include="AdminPage\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage\SportsItem\Add.aspx.cs">
+    <Compile Include="AdminPage\NewsPage\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminPage\SportsItem\Add.aspx.designer.cs">
+    <Compile Include="AdminPage\NewsPage\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage\SportsItem\Manage.aspx.cs">
+    <Compile Include="AdminPage\NewsPage\Manage.aspx.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminPage\SportsItem\Manage.aspx.designer.cs">
+    <Compile Include="AdminPage\NewsPage\Manage.aspx.designer.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPage\RefereePage\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\RefereePage\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\RefereePage\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\RefereePage\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SignUp\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SignUp\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SportsItemPage\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SportsItemPage\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SportsItemPage\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SportsItemPage\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\SportsMan\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\SportsMan\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImageUp.cs" />
+    <Compile Include="Common\PageBar.cs" />
     <Compile Include="Common\ValidateCode.cs" />
     <Compile Include="DBContextFactory.cs" />
+    <Compile Include="FrontPage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage\OnlineSignUp.aspx.cs">
+      <DependentUpon>OnlineSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\OnlineSignUp.aspx.designer.cs">
+      <DependentUpon>OnlineSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Handel\CheckCode.ashx.cs">
       <DependentUpon>CheckCode.ashx</DependentUpon>
     </Compile>
@@ -350,6 +756,24 @@
     <Content Include="AdminPage\lib\layui\font\iconfont.ttf" />
     <Content Include="AdminPage\lib\layui\font\iconfont.woff" />
     <Content Include="Handel\CheckCode.ashx" />
+    <Content Include="FrontPage\Main.Master" />
+    <Content Include="AdminPage\NewsPage\ckeditor\CHANGES.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\LICENSE.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\scayt\README.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\plugins\wsc\README.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\README.md" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="AdminPage\NewsPage\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="AdminPage\NewsPage\ckeditor\skins\moono-lisa\readme.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -360,7 +784,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="File\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
