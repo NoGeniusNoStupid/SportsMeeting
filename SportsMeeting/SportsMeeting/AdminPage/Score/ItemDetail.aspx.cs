@@ -30,17 +30,23 @@ namespace SportsMeeting.AdminPage.Score
             int pageIndex = Request.QueryString["pageIndex"] != null ? int.Parse(Request.QueryString["pageIndex"]) : 1;
             int pageSize = 10;//页面记录数
             List<SignUp> list = new List<SignUp>();
+
+            int listCount = 0;
             //查询记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                list = Entity.SignUp.Where(a => a.ItemId == itemId && a.State == "同意").OrderByDescending(a => a.Id).OrderByDescending(a => a.FirstScore).OrderByDescending(a => a.FinalScore).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.ItemId == itemId && a.State == "同意").ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                list = Entity.SignUp.Where(a => a.ItemId == itemId && a.State == "同意" && a.SportsMan.Name.Contains(SreachWhere.Text) || a.SportsMan.Class.Contains(SreachWhere.Text)).OrderByDescending(a => a.Id).OrderByDescending(a => a.FirstScore).OrderByDescending(a => a.FinalScore).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.ItemId == itemId && a.State == "同意" && a.SportsMan.Name.Contains(SreachWhere.Text) || a.SportsMan.Class.Contains(SreachWhere.Text)).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
 
-            int listCount = Entity.SignUp.Where(a => a.ItemId == itemId).Count();
+           
             //生成导航条
             string strBar = PageBar.GetPageBar(pageIndex, listCount, pageSize);
             mPageBar = strBar;

@@ -30,3 +30,4 @@ F:\SelfDevelopment\SportsMeeting\SportsMeeting\SportsMeeting\bin\zh-Hans\EntityF
 F:\SelfDevelopment\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.dll
 F:\SelfDevelopment\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.pdb
 E:\DevelopmentSelf\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.csprojResolveAssemblyReference.cache
+F:\SelfDevelopment\SportsMeeting\SportsMeeting\SportsMeeting\obj\Debug\SportsMeeting.csprojResolveAssemblyReference.cache

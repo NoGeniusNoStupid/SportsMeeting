@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>黑色通用服务公司响应式网站模板</title>
+    <title>运动会管理系统</title>
     <link rel="stylesheet" type="text/css" href="Assets/css/reset.css" />
     <script type="text/javascript" src="Assets/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="Assets/js/js_z.js"></script>
@@ -50,9 +50,9 @@
                         <li class="now"><a href="Default.aspx">首页</a></li>
                         <li><a href="NewsPage.aspx">新闻中心</a></li>
                         <li><a href="OnlineSignUp.aspx">网上报名</a></li>
-                        <li><a href="join.html">项目赛况</a></li>
-                        <li><a href="join.html">奖牌榜</a></li>
-                        <li><a href="join.html">班级榜</a></li>
+                        <li><a href="SportItemResults.aspx">项目赛况</a></li>
+                        <li><a href="SelfRank.aspx">奖牌榜</a></li>
+                        <li><a href="ClassRankPage.aspx">班级榜</a></li>
                         <% if (Session["ManId"] == null)
                            { %>
                         <li><a href="Register.aspx">注册</a></li>
@@ -60,7 +60,7 @@
                         <%}
                            else
                            { %>
-                        <li class="er"><a href="service.html">个人中心</a></li>
+                        <li class="er"><a href="#">个人中心</a></li>
                         <li><a href="Default.aspx?type='out'">退出</a></li>
                          <li><a href="#">当前用户：<%=Session["ManName"].ToString() %>    性别：<%=Session["Sex"].ToString() %></a></li>
                        
@@ -75,8 +75,8 @@
                             </div>
                             <div class="hx_m clearfix">
                                 <ul class="hx_ml">
-                                    <li><a href="">报名结果</a></li>
-                                    <li><a href="">我的成绩</a></li>
+                                    <li><a href="/SelfCenter/MySignUp.aspx">报名结果</a></li>
+                                    <li><a href="/SelfCenter/MyScore.aspx">我的成绩</a></li>
                                 </ul>
                                 <div class="hx_mr">
                                     <img src="Assets/upload/pic3.jpg" alt="" />

@@ -15,7 +15,7 @@
             <table cellpadding="0" cellspacing="0">
                 <tr>
                     <th scope="col">编号</th>
-                    <th scope="col">姓名</th>
+                    <th scope="col">项目</th>
                     <th scope="col">类型</th>
                     <th scope="col">限制</th>
                     <th scope="col">裁判</th>

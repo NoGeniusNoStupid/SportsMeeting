@@ -28,16 +28,22 @@ namespace SportsMeeting.AdminPage.RefereePage
             int pageIndex = Request.QueryString["pageIndex"] != null ? int.Parse(Request.QueryString["pageIndex"]) : 1;
             int pageSize = 5;//页面记录数
             List<Referee> list = new List<Referee>();
+
+            int listCount = 0;
             //查询记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                list = Entity.Referee.Where(a => true).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.Referee.Where(a => true).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                list = Entity.Referee.Where(a => a.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.Referee.Where(a => a.Name.Contains(SreachWhere.Text)).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
-            int listCount = Entity.Referee.Where(a => true).Count();
+          
             //生成导航条
             string strBar = PageBar.GetPageBar(pageIndex, listCount, pageSize);
             mPageBar = strBar;

@@ -49,19 +49,24 @@ namespace SportsMeeting.AdminPage.Rank
 
                 RankList.Add(rank);
             }
-            int listCount = RankList.Count;
-            string strBar = PageBar.GetPageBarType(pageIndex, listCount, pageSize);
-            mPageBar = strBar;
+            int listCount = 0;
+            
 
             //绑定记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                RankList = RankList.Where(a => true).OrderByDescending(a => a.AllNum).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                RankList = RankList.Where(a => true).ToList();
+                listCount = RankList.Count;
+                RankList = RankList.OrderByDescending(a => a.AllNum).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                RankList = RankList.Where(a => a.SportsMan.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.AllNum).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                RankList = RankList.Where(a => a.SportsMan.Name.Contains(SreachWhere.Text)).ToList();
+                listCount = RankList.Count;
+                RankList = RankList.OrderByDescending(a => a.AllNum).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
+            string strBar = PageBar.GetPageBarType(pageIndex, listCount, pageSize);
+            mPageBar = strBar;
             this.Repeater1.DataSource = RankList;
             this.Repeater1.DataBind();
         }

@@ -40,13 +40,17 @@ namespace SportsMeeting.AdminPage.SignUpPage
                 //查询记录
                 if (string.IsNullOrEmpty(SreachWhere.Text))
                 {
-                    list = list.Where(a => true).OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                    list = list.Where(a => true).ToList();
+                    listCount = list.Count;
+                    list = list.OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
                 }
                 else
                 {
-                    list = list.Where(a => a.SportsItem.Name.Contains(SreachWhere.Text) || a.SportsMan.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                    list = list.Where(a => a.SportsItem.Name.Contains(SreachWhere.Text) || a.SportsMan.Name.Contains(SreachWhere.Text)).ToList();
+                    listCount = list.Count;
+                    list = list.OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
                 }
-                listCount = Entity.SignUp.Where(a => a.State != "待审").Count();
+              
                 strBar = PageBar.GetPageBarType(pageIndex, listCount, pageSize);
             }
             else
@@ -55,11 +59,15 @@ namespace SportsMeeting.AdminPage.SignUpPage
                 //查询记录
                 if (string.IsNullOrEmpty(SreachWhere.Text))
                 {
-                    list = list.Where(a => true).OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                    list = list.Where(a => true).ToList();
+                    listCount = list.Count;
+                    list = list.OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
                 }
                 else
                 {
-                    list = list.Where(a => a.SportsItem.Name.Contains(SreachWhere.Text) || a.SportsMan.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                    list = list.Where(a => a.SportsItem.Name.Contains(SreachWhere.Text) || a.SportsMan.Name.Contains(SreachWhere.Text)).ToList();
+                    listCount = list.Count;
+                    list = list.OrderByDescending(a => a.ItemId).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
                 }
                 listCount = Entity.SignUp.Where(a => a.State == "待审").Count();
                 strBar = PageBar.GetPageBar(pageIndex, listCount, pageSize);

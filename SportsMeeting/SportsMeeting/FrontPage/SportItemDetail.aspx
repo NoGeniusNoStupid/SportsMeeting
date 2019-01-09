@@ -1,33 +1,36 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontPage/Main.Master" AutoEventWireup="true" CodeBehind="SelfRank.aspx.cs" Inherits="SportsMeeting.FrontPage.SelfRank" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontPage/Main.Master" AutoEventWireup="true" CodeBehind="SportItemDetail.aspx.cs" Inherits="SportsMeeting.FrontPage.SportItemDetail" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="join clearfix" style="width: 1100px; margin-left: auto; margin-right: auto">
         <div class="invite">
             <div>
                 <div class="layui-row">
-                    <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入用户姓名" lay-verify="Name" autocomplete="off" class="layui-input" Width="255px"></asp:TextBox>
+                    <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入姓名" lay-verify="Name" autocomplete="off" class="layui-input"></asp:TextBox>
                     <asp:Button class="layui-btn" lay-filter="add" lay-submit="" ID="Sreach" runat="server" Text="查询" OnClick="Sreach_Click" />
                 </div>
             </div>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th>姓名</th>
-                    <th>金牌次数</th>
-                    <th>银牌次数</th>
-                    <th>铜牌次数</th>
-                    <th>总奖牌数</th>
+                   
+                    <th scope="col">姓名</th>
+                    <th scope="col">班级</th>
+                    <th scope="col">决赛排名</th>
+                    <th scope="col">决赛成绩</th>
+                    <th scope="col">初赛排名</th>
+                    <th scope="col">初赛成绩</th>
+                  
                 </tr>
+
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tr>
                             <td><%# Eval("SportsMan.Name")%></td>
-                            <td><%# Eval("FirstNum")%></td>
-                            <td><%# Eval("SecondNum")%></td>
-                            <td><%# Eval("ThirdNum")%></td>
-                            <td><%# Eval("AllNum")%></td>
+                            <td><%# Eval("SportsMan.Class")%></td>
+                            <td><%# Eval("SportsItem.FirstTime")%></td>
+                            <td><%# Eval("FirstScore")%></td>
+                            <td><%# Eval("SportsItem.FinalTime")%></td>
+                            <td><%# Eval("FinalScore")%></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>

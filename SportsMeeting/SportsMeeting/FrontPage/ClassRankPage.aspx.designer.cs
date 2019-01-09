@@ -10,7 +10,7 @@
 namespace SportsMeeting.FrontPage {
     
     
-    public partial class SelfRank {
+    public partial class ClassRankPage {
         
         /// <summary>
         /// SreachWhere 控件。

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontPage/Main.Master" AutoEventWireup="true" CodeBehind="SelfRank.aspx.cs" Inherits="SportsMeeting.FrontPage.SelfRank" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontPage/Main.Master" AutoEventWireup="true" CodeBehind="ClassRankPage.aspx.cs" Inherits="SportsMeeting.FrontPage.ClassRankPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,13 +8,13 @@
         <div class="invite">
             <div>
                 <div class="layui-row">
-                    <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入用户姓名" lay-verify="Name" autocomplete="off" class="layui-input" Width="255px"></asp:TextBox>
+                    <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入班级名称" lay-verify="Name" autocomplete="off" class="layui-input" Width="255px"></asp:TextBox>
                     <asp:Button class="layui-btn" lay-filter="add" lay-submit="" ID="Sreach" runat="server" Text="查询" OnClick="Sreach_Click" />
                 </div>
             </div>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th>姓名</th>
+                    <th>班级</th>
                     <th>金牌次数</th>
                     <th>银牌次数</th>
                     <th>铜牌次数</th>
@@ -23,7 +23,7 @@
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tr>
-                            <td><%# Eval("SportsMan.Name")%></td>
+                            <td><%# Eval("ClassName")%></td>
                             <td><%# Eval("FirstNum")%></td>
                             <td><%# Eval("SecondNum")%></td>
                             <td><%# Eval("ThirdNum")%></td>

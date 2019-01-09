@@ -571,7 +571,7 @@
     <Content Include="FrontPage\Assets\upload\banner2.jpg" />
     <Content Include="FrontPage\Assets\upload\运动4_副本.jpg" />
     <Content Include="FrontPage\Assets\upload\banner1.jpg" />
-    <Content Include="FrontPage\ClassRank.aspx" />
+    <Content Include="FrontPage\ClassRankPage.aspx" />
     <Content Include="FrontPage\Default.aspx" />
     <Content Include="FrontPage\Login.aspx" />
     <Content Include="FrontPage\NewsDetail.aspx" />
@@ -581,6 +581,7 @@
     <Content Include="FrontPage\SelfCenter\MyScore.aspx" />
     <Content Include="FrontPage\SelfCenter\MySignUp.aspx" />
     <Content Include="FrontPage\SelfRank.aspx" />
+    <Content Include="FrontPage\SportItemDetail.aspx" />
     <Content Include="FrontPage\SportItemResults.aspx" />
     <Content Include="PageBase.aspx" />
     <Content Include="SportsMeeting.Context.tt">
@@ -754,12 +755,12 @@
     <Compile Include="Common\PageBar.cs" />
     <Compile Include="Common\ValidateCode.cs" />
     <Compile Include="DBContextFactory.cs" />
-    <Compile Include="FrontPage\ClassRank.aspx.cs">
-      <DependentUpon>ClassRank.aspx</DependentUpon>
+    <Compile Include="FrontPage\ClassRankPage.aspx.cs">
+      <DependentUpon>ClassRankPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrontPage\ClassRank.aspx.designer.cs">
-      <DependentUpon>ClassRank.aspx</DependentUpon>
+    <Compile Include="FrontPage\ClassRankPage.aspx.designer.cs">
+      <DependentUpon>ClassRankPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontPage\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -830,6 +831,13 @@
     </Compile>
     <Compile Include="FrontPage\SelfRank.aspx.designer.cs">
       <DependentUpon>SelfRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage\SportItemDetail.aspx.cs">
+      <DependentUpon>SportItemDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontPage\SportItemDetail.aspx.designer.cs">
+      <DependentUpon>SportItemDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontPage\SportItemResults.aspx.cs">
       <DependentUpon>SportItemResults.aspx</DependentUpon>

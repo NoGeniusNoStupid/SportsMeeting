@@ -6,14 +6,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SportsMeeting.FrontPage.SelfCenter
+namespace SportsMeeting.FrontPage
 {
-    public partial class MySignUp : PageBase
+    public partial class SportItemDetail : PageBase
     {
         //表示导航条
         public string mPageBar = string.Empty;
 
-        //实现
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -25,26 +24,21 @@ namespace SportsMeeting.FrontPage.SelfCenter
         private void BindData()
         {
             int pageIndex = Request.QueryString["pageIndex"] != null ? int.Parse(Request.QueryString["pageIndex"]) : 1;
-            int pageSize = 10;//页面记录数
-
-            int manId = Convert.ToInt32(Session["ManId"]);
-
+            int ItemId = Convert.ToInt32(Request.QueryString["id"]);
+            int pageSize = 5;//页面记录数
             List<SignUp> list = new List<SignUp>();
-            //绑定记录
+            //查询记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                list = Entity.SignUp.Where(a => a.ManId == manId).OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.ItemId==ItemId).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                list = Entity.SignUp.Where(a => a.ManId == manId && a.SportsItem.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.SportsMan.Name.Contains(SreachWhere.Text) && a.ItemId == ItemId).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
-
-
-            int listCount = Entity.SignUp.Where(a => a.ManId == manId).Count();
-
-            string strBar = PageBar.GetPageBarType(pageIndex, listCount, pageSize);
-
+            int listCount = Entity.SignUp.Where(a => a.ItemId == ItemId).Count();
+            //生成导航条
+            string strBar = PageBar.GetFrontPageBar(pageIndex, listCount, pageSize);
             mPageBar = strBar;
 
 
@@ -52,6 +46,11 @@ namespace SportsMeeting.FrontPage.SelfCenter
             this.Repeater1.DataBind();
         }
 
+        /// <summary>
+        /// 搜索
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Sreach_Click(object sender, EventArgs e)
         {
             BindData();
