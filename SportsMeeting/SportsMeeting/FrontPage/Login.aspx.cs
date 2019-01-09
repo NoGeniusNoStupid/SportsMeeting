@@ -23,12 +23,19 @@ namespace SportsMeeting.FrontPage
                 Message("该账号不存在", false);
                 return;
             }
+            if (IsExits.State == "禁赛")
+            {
+                Message("该用户已被禁赛，请于管理员联系！", false);
+                return;
+            }
             if(IsExits.Pwd!=Pwd.Text)
             {
                 Message("用户名或者密码错误", false);
                 return;
             }
             Session["ManId"] = IsExits.Id;
+            Session["ManName"] = IsExits.Name;
+            Session["Sex"] = IsExits.Sex;
             Message("Default.aspx", "登陆成功");//跳转
         }
     }

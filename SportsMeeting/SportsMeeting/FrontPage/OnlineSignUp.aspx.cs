@@ -52,7 +52,7 @@ namespace SportsMeeting.FrontPage
         protected void SigngUp_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(((LinkButton)sender).CommandArgument);
-            var Item = Entity.SportsItem.FirstOrDefault(a => a.Id == id);//获取项目对象
+            var sportsItem = Entity.SportsItem.FirstOrDefault(a => a.Id == id);//获取项目对象
 
             if (Session["ManId"] == null)
             {
@@ -61,20 +61,38 @@ namespace SportsMeeting.FrontPage
             }
             //判断是否过期
             DateTime now = DateTime.Now;
-            if (now > Item.FirstTime)
+            if (now > sportsItem.FirstTime)
             {
                 Message("该项目已经过期，无法报名！", false);
                 return;
             }
 
-            //判断是否已经报名
+
+           
             int manId =Convert.ToInt32(Session["ManId"]);
+            //判断限制条件
+            var man = Entity.SportsMan.FirstOrDefault(a => a.Id == manId);//获取登陆者信息
+            if (sportsItem.Limit != "不限" && man.Sex != sportsItem.Limit)
+            {
+                Message("当前项目仅限" + sportsItem.Limit+"生报名", false);
+                return;
+            }
+
+            //判断是否已经报名
             var isExist = Entity.SignUp.FirstOrDefault(a => a.ManId == manId && a.ItemId == id);
             if (isExist != null)
             {
                 Message("已经报名过此项目，无需重复操作！",false);
                 return;
             }
+           
+            //报名人数限制
+            if (sportsItem.Num <= sportsItem.SignUp.Count)
+            {
+                Message("报名人数已满，暂停报名", false);
+                return;
+            }
+          
             //添加记录
             SignUp signUp = new SignUp();
             signUp.ItemId = id;

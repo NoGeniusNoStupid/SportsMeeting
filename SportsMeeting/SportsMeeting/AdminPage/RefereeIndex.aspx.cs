@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SportsMeeting.AdminPage.SignUp
+namespace SportsMeeting.AdminPage
 {
-    public partial class Manage : System.Web.UI.Page
+    public partial class RefereeIndex : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

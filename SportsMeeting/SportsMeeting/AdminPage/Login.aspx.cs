@@ -19,16 +19,33 @@ namespace SportsMeeting.AdminPage
           
             string name = username.Text;
             string pwd = password.Text;
-            //查询数据
-            var admin = Entity.Admin.FirstOrDefault(a => a.Name == name && a.Pwd == pwd);
-            if (admin == null)
+            if (Power.Text == "管理员")
             {
-                Message("用户名或密码错误！");
-                return;
+                //查询数据
+                var admin = Entity.Admin.FirstOrDefault(a => a.Name == name && a.Pwd == pwd);
+                if (admin == null)
+                {
+                    Message("用户名或密码错误！");
+                    return;
+                }
+                Session["AdminId"] = admin.Id;
+                Session["RefereeId"] = null;
+                Response.Redirect("/AdminPage/Index.aspx");
             }
-            Session["ManId"] = admin.Id;
-
-            Response.Redirect("/AdminPage/Index.aspx");
+            else
+            {
+                //查询数据
+                var referee = Entity.Referee.FirstOrDefault(a => a.Name == name && a.Pwd == pwd);
+                if (referee == null)
+                {
+                    Message("用户名或密码错误！");
+                    return;
+                }
+                Session["RefereeId"] = referee.Id;
+                Session["AdminId"] = null;
+                Response.Redirect("/AdminPage/RefereeIndex.aspx");
+            }
+            
         }
     }
 }

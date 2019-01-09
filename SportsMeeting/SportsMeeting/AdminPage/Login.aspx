@@ -33,9 +33,10 @@
             <hr class="hr15">
             <asp:TextBox ID="password" TextMode="Password" placeholder="密码" lay-verify="required" runat="server" class="layui-input"></asp:TextBox>
             <hr class="hr15">
-           <%-- <asp:TextBox ID="VerCode" placeholder="验证码" lay-verify="required" runat="server" class="layui-input"></asp:TextBox>
-            <img id="img" src="/Handel/CheckCode.ashx?id=1" style="height: 24px;" />
-            <a href="javascript:void(0)" onclick="changeCheckCode();return false;">看不清，换一张</a>--%>
+            <asp:DropDownList ID="Power" runat="server">
+                <asp:ListItem>管理员</asp:ListItem>
+                <asp:ListItem>教练</asp:ListItem>
+            </asp:DropDownList>
             <hr class="hr15">
             <%--   <input value="登录"  style="width:100%;" type="submit">--%>
             <asp:Button ID="Button1" lay-submit lay-filter="login" runat="server" Text="登录" OnClick="Button1_Click" />

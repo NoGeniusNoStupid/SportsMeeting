@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="join clearfix" style="width: 800px; margin-left: auto; margin-right: auto">
+    <div class="join clearfix" style="width: 500px; margin-left: auto; margin-right: auto">
         <ul class="book">
             <li class="clearfix">
                 <p>请如实填写个人信息</p>

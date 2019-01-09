@@ -30,7 +30,7 @@
     <div class="x-body">
         <form class="layui-form layui-col-md12 x-so" runat="server">
             <div class="layui-row">
-                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入裁判姓名" lay-verify="Name" autocomplete="off" class="layui-input"></asp:TextBox>
+                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入裁判姓名" lay-verify="Name" autocomplete="off" class="layui-input"  Width="255px"></asp:TextBox>
                 <asp:Button class="layui-btn" lay-filter="add" lay-submit="" ID="Sreach" runat="server" Text="查询" OnClick="Sreach_Click" />
             </div>
             <xblock>
@@ -41,6 +41,7 @@
                 <thead>
                     <tr>
                         <th>编号</th>
+                        <th>账号</th>
                         <th>姓名</th>
                         <th>性别</th>
                         <th>年龄</th>
@@ -54,6 +55,7 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%# Eval("Id")%></td>
+                                <td><%# Eval("Account")%></td>
                                 <td><%# Eval("Name")%></td>
                                 <td><%# Eval("Sex")%></td>
                                 <td><%# Eval("Age")%></td>
@@ -62,7 +64,7 @@
                                 <td class="td-manage">
                                  
                                     <a title="编辑"  href="Add.aspx?type=1&&id=<%# Eval("Id")%>">
-                                        <i class="layui-icon">&#xe642;</i>
+                                        <i class="layui-icon">&#xe642;</i></a>
                                    <%-- </a>
                                     <a  title="修改密码" href="javascript:;">
                                         <i class="layui-icon">&#xe631;</i>
@@ -70,10 +72,10 @@
                                     <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
                                         <i class="layui-icon">&#xe640;</i>
                                     </a>--%>
-                                  <asp:LinkButton ID="ReInit" runat="server" OnClick="ReInit_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要重置密码吗？");'>
+                                  <asp:LinkButton ID="ReInit" runat="server"  title="重置密码"  OnClick="ReInit_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要重置密码吗？");'>
                                       <i class="layui-icon">&#xe631;</i>
                                   </asp:LinkButton>
-                                  <asp:LinkButton ID="Delete" runat="server" OnClick="Delete_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要删除此信息吗？");'>
+                                  <asp:LinkButton ID="Delete" runat="server"  title="删除"  OnClick="Delete_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要删除此信息吗？");'>
                                       <i class="layui-icon">&#xe640;</i>
                                   </asp:LinkButton>
                                    <%-- <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="../../images/ico_del.gif" ToolTip="删除该记录" OnClick="del_Click" CommandArgument='<%# Eval("did") %>' OnClientClick='return confirm("您确定要删除此信息么？");' />--%>

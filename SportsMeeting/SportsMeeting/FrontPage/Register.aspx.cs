@@ -51,6 +51,7 @@ namespace SportsMeeting.FrontPage
             sportsMan.Sex = Sex.Text;
             sportsMan.Class = Class.Text;
             sportsMan.OperTime = DateTime.Now;
+            sportsMan.State = "正常";
             //插入数据
             Entity.SportsMan.Add(sportsMan);
             Entity.SaveChanges();

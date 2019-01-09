@@ -40,17 +40,19 @@
                     <img src="Assets/images/logo2.png" alt="" /></a>
             </div>
             <div class="head_r clearfix">
-                <div class="search">
+              <%--  <div class="search">
                     <input name="" type="text">
                     <input name="" type="submit" value="">
-                </div>
+                </div>--%>
                 <div class="nav_m">
                     <div class="n_icon">导航栏</div>
                     <ul class="nav clearfix">
                         <li class="now"><a href="Default.aspx">首页</a></li>
-                        <li><a href="news.html">新闻中心</a></li>
+                        <li><a href="NewsPage.aspx">新闻中心</a></li>
                         <li><a href="OnlineSignUp.aspx">网上报名</a></li>
                         <li><a href="join.html">项目赛况</a></li>
+                        <li><a href="join.html">奖牌榜</a></li>
+                        <li><a href="join.html">班级榜</a></li>
                         <% if (Session["ManId"] == null)
                            { %>
                         <li><a href="Register.aspx">注册</a></li>
@@ -60,6 +62,9 @@
                            { %>
                         <li class="er"><a href="service.html">个人中心</a></li>
                         <li><a href="Default.aspx?type='out'">退出</a></li>
+                         <li><a href="#">当前用户：<%=Session["ManName"].ToString() %>    性别：<%=Session["Sex"].ToString() %></a></li>
+                       
+                     
                         <%} %>
                     </ul>
                     <div class="er_m">

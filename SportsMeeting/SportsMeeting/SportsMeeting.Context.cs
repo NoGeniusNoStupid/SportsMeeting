@@ -27,9 +27,9 @@ namespace SportsMeeting
     
         public virtual DbSet<Admin> Admin { get; set; }
         public virtual DbSet<News> News { get; set; }
+        public virtual DbSet<Referee> Referee { get; set; }
         public virtual DbSet<SignUp> SignUp { get; set; }
         public virtual DbSet<SportsItem> SportsItem { get; set; }
         public virtual DbSet<SportsMan> SportsMan { get; set; }
-        public virtual DbSet<Referee> Referee { get; set; }
     }
 }

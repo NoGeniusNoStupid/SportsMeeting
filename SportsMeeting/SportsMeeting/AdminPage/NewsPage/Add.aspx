@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SportsMeeting.AdminPage.NewsPage.Add" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" validateRequest="false" CodeBehind="Add.aspx.cs" Inherits="SportsMeeting.AdminPage.NewsPage.Add" %>
 
 <!DOCTYPE html>
 
@@ -38,6 +38,7 @@
                 </label>
                 <div class="layui-input-inline">
                     <asp:DropDownList ID="Type" runat="server" CssClass="layui-input">
+                        <asp:ListItem>精彩新闻</asp:ListItem>
                         <asp:ListItem>比赛信息</asp:ListItem>
                         <asp:ListItem>荣誉表彰</asp:ListItem>
                     </asp:DropDownList>
@@ -48,7 +49,7 @@
                     <span class="x-red">*</span>展示图片
                 </label>
                 <div class="layui-input-inline">
-                      <input type="file"  id="ImagePath" name="ImagePath"  />
+                      <input type="file"  id="ImagePath"  lay-verify="ImagePath" name="ImagePath"  />
                 </div>
             </div>
             <div class="layui-form-item">
@@ -56,7 +57,9 @@
                     <span class="x-red">*</span>新闻内容
                 </label>
                 <div class="layui-input-inline" style="width:600px">
-                    <textarea name="editor" id="editor" lay-verify="editor"  cols="30" rows="10"></textarea>
+                    <textarea name="editor" id="editor" lay-verify="editor"  cols="30" rows="10">
+                       <%=content %>
+                    </textarea>
                     <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
                     <script type="text/javascript">
                         CKEDITOR.replace('editor');
@@ -84,12 +87,16 @@
                         return '新闻名称不能为空';
                     }
                 },
-                //editor: function (value) {
+                editor: function () {
+                    if (CKEDITOR.instances.editor.getData() == "") {
+                        return '新闻内容不能为空';
+                    }
+                },
+                //ImagePath: function (value) {
                 //    if (value == "") {
-                //        return '新闻内容不能为空';
+                //        return '图片不能为空';
                 //    }
-                //},
-
+                //}
             });
         });
     </script>

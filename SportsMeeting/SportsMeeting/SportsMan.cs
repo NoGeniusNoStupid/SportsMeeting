@@ -20,15 +20,15 @@ namespace SportsMeeting
         }
     
         public int Id { get; set; }
+        public string Account { get; set; }
         public string Name { get; set; }
+        public string Pwd { get; set; }
         public string Age { get; set; }
         public string Sex { get; set; }
-        public string Team { get; set; }
         public string Class { get; set; }
-        public Nullable<System.DateTime> OperTime { get; set; }
-        public string Pwd { get; set; }
         public string Tel { get; set; }
-        public string Account { get; set; }
+        public Nullable<System.DateTime> OperTime { get; set; }
+        public string State { get; set; }
     
         public virtual ICollection<SignUp> SignUp { get; set; }
     }

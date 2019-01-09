@@ -27,6 +27,7 @@ namespace SportsMeeting.AdminPage.SportsItemPage
                     ListItem listItem = new ListItem();
                     listItem.Value = item.Id.ToString();
                     listItem.Text = item.Name;
+                    
                     RefereeId.Items.Add(listItem);
                 }
 
@@ -38,9 +39,12 @@ namespace SportsMeeting.AdminPage.SportsItemPage
                     var sportsItem = Entity.SportsItem.FirstOrDefault(a => a.Id == id);//获取对象
                     Name.Text = sportsItem.Name;
                     Type.Text = sportsItem.Type;
+                    Limit.Text = sportsItem.Limit;
                     RefereeId.SelectedValue = sportsItem.RefereeId.ToString();
                     FirstTime = Convert.ToDateTime(sportsItem.FirstTime).ToString("yyyy-MM-ddTHH:mm:ss");
                     FinalTime = Convert.ToDateTime(sportsItem.FinalTime).ToString("yyyy-MM-ddTHH:mm:ss");
+                    Rule.Text = sportsItem.Rule;
+                    Num.Text = sportsItem.Num.ToString();
                 }
             }
         }
@@ -58,6 +62,9 @@ namespace SportsMeeting.AdminPage.SportsItemPage
                 sportsItem.RefereeId = Convert.ToInt32(RefereeId.Text);
                 sportsItem.FirstTime = Convert.ToDateTime(Request["FirstTime"]);
                 sportsItem.FinalTime = Convert.ToDateTime(Request["FinalTime"]);
+                sportsItem.Limit = Limit.Text;
+                sportsItem.Rule = Rule.Text;
+                sportsItem.Num =Convert.ToInt32(Num.Text);
                 //保存数据
                 Entity.Entry(sportsItem).State = EntityState.Modified;
                 Entity.SaveChanges();
@@ -72,7 +79,10 @@ namespace SportsMeeting.AdminPage.SportsItemPage
                 sportsItem.RefereeId = Convert.ToInt32(RefereeId.Text);
                 sportsItem.FirstTime = Convert.ToDateTime(Request["FirstTime"]);
                 sportsItem.FinalTime = Convert.ToDateTime(Request["FinalTime"]);
+                sportsItem.Limit = Limit.Text;
                 sportsItem.OperTime = DateTime.Now;
+                sportsItem.Num = Convert.ToInt32(Num.Text);
+                sportsItem.Rule = Rule.Text;
 
                 //插入数据
                 Entity.SportsItem.Add(sportsItem);

@@ -29,7 +29,7 @@
     <div class="x-body">
         <form class="layui-form layui-col-md12 x-so" runat="server">
             <div class="layui-row">
-                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入项目名称" lay-verify="Name" autocomplete="off" class="layui-input"></asp:TextBox>
+                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入项目名称" lay-verify="Name" autocomplete="off" class="layui-input"  Width="255px"></asp:TextBox>
                 <asp:Button class="layui-btn" lay-filter="add" lay-submit="" ID="Sreach" runat="server" Text="查询" OnClick="Sreach_Click" />
             </div>
             <xblock>
@@ -42,7 +42,10 @@
                         <th>编号</th>
                         <th>姓名</th>
                         <th>类型</th>
+                        <th>限制</th>
                         <th>裁判</th>
+                       <th>规则</th>
+                          <th>限制人数</th>
                         <th>开始时间</th>
                         <th>结束时间</th>
                         <th>添加时间</th>
@@ -56,14 +59,19 @@
                                 <td><%# Eval("Id")%></td>
                                 <td><%# Eval("Name")%></td>
                                  <td><%# Eval("Type")%></td>
+                                 <td><%# Eval("Limit")%></td>
                                 <td><%# Eval("Referee.Name")%></td>
+                                  <td><%# Eval("Rule")%></td>
+                                 <td><%# Eval("Num")%></td>
                                 <td><%# Eval("FirstTime")%></td>
                                 <td><%# Eval("FinalTime")%></td>
                                 <td><%# Eval("OperTime")%></td>
+
+
                                 <td class="td-manage">
                                     <a title="编辑"  href="Add.aspx?type=1&&id=<%# Eval("Id")%>">
                                         <i class="layui-icon">&#xe642;</i>
-                                  <asp:LinkButton ID="Delete" runat="server" OnClick="Delete_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要删除此信息吗？");'>
+                                  <asp:LinkButton ID="Delete"  title="删除"  runat="server" OnClick="Delete_Click" CommandArgument='<%# Eval("Id") %>' OnClientClick='return confirm("您确定要删除此信息吗？");'>
                                       <i class="layui-icon">&#xe640;</i>
                                   </asp:LinkButton>
                               

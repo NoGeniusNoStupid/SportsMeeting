@@ -22,12 +22,16 @@ namespace SportsMeeting
         public int Id { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
+        public string Limit { get; set; }
+        public Nullable<int> RefereeId { get; set; }
         public Nullable<System.DateTime> FirstTime { get; set; }
         public Nullable<System.DateTime> FinalTime { get; set; }
         public Nullable<System.DateTime> OperTime { get; set; }
-        public Nullable<int> RefereeId { get; set; }
+        public string State { get; set; }
+        public string Rule { get; set; }
+        public Nullable<int> Num { get; set; }
     
-        public virtual ICollection<SignUp> SignUp { get; set; }
         public virtual Referee Referee { get; set; }
+        public virtual ICollection<SignUp> SignUp { get; set; }
     }
 }

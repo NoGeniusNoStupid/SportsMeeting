@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="eac9684929594bfaba36f874a7e7f6a3" Name="Diagram1">
-        <EntityTypeShape EntityType="SportsMeetingModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsMeetingModel.News" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsMeetingModel.SignUp" Width="1.5" PointX="8.125" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsMeetingModel.SportsItem" Width="1.5" PointX="11.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsMeetingModel.SportsMan" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="SportsMeetingModel.FK_SignUp_SportsItem" />
-        <AssociationConnector Association="SportsMeetingModel.FK_SignUp_SportsMan" />
-        <EntityTypeShape EntityType="SportsMeetingModel.Referee" Width="1.5" PointX="9.5" PointY="0.75" />
-        <AssociationConnector Association="SportsMeetingModel.FK_SportsItem_Referee" />
+      <Diagram DiagramId="41557ff1281b4bb198db40c6992b52db" Name="Diagram1">
+        <EntityTypeShape EntityType="SportsMeetingModel.Admin" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsMeetingModel.News" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsMeetingModel.Referee" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsMeetingModel.SignUp" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsMeetingModel.SportsItem" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsMeetingModel.SportsMan" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="SportsMeetingModel.FK_SportsItem_Referee" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsMeetingModel.FK_SignUp_SportsItem" ManuallyRouted="false" />
+        <AssociationConnector Association="SportsMeetingModel.FK_SignUp_SportsMan" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

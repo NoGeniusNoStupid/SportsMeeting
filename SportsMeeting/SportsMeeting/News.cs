@@ -16,10 +16,10 @@ namespace SportsMeeting
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public string Type { get; set; }
         public string Content { get; set; }
         public Nullable<int> ClickNum { get; set; }
-        public Nullable<System.DateTime> OperTime { get; set; }
-        public string Type { get; set; }
         public string Image { get; set; }
+        public Nullable<System.DateTime> OperTime { get; set; }
     }
 }

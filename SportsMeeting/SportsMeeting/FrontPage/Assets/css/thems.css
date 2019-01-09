@@ -134,7 +134,9 @@ div{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-
 .scd .scd_top .s_nav a.active span{ color:#0065B3; border-bottom:3px solid #0065B3; position:absolute; left:0; top:0; z-index:99;}
 .scd .scd_top .pst{ width:50%; height:40px; line-height:40px; text-align:right; position:absolute; right:0; top:0; font-size:14px;}
 .scd .scd_m{ width:100%; padding-top:10px;}
-.scd_m .scd_ml{ width:850px; float:left; text-align:left; font-size:14px; line-height:175%; border-right:1px solid #ddd; padding-right:38px;}
+.scd_m .scd_ml{ width:1127px; 
+float:left; text-align:left; font-size:14px; line-height:175%; border-right:1px solid #ddd; padding-right:38px;
+}
 .scd_m .scd_ml h1{ width:100%; text-align:center; padding:35px 0; font-size:20px; color:#EC9D19; font-weight:normal; margin-bottom:15px;}
 .scd_m .scd_ml .time{ width:100%; height:30px; line-height:30px; position:relative;}
 .scd_m .scd_ml .time span{ display:inline-block; *display:inline; zoom:1; height:30px; line-height:30px; margin-right:10px; color:#858585;}

@@ -66,82 +66,32 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="admin-list.html">
+                            <a _href="/AdminPage/AdminPage/Add.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>管理员列表</cite>
+                                <cite>添加管理员</cite>
                             </a>
                         </li>
                         <li>
-                            <a _href="admin-role.html">
+                            <a _href="/AdminPage/AdminPage/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>角色管理</cite>
+                                <cite>管理员管理</cite>
                             </a>
-                        </li>
-                        <li>
-                            <a _href="admin-cate.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>权限分类</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="admin-rule.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>权限管理</cite>
-                            </a>
-                        </li>
+                        </li>  
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe6b8;</i>
-                        <cite>会员管理</cite>
-                        <i class="iconfont nav_right">&#xe697;</i>
+                        <cite>用户管理</cite>
+                         <i class="iconfont nav_right">&#xe697;</i>
+                    
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="member-list.html">
+                            <a _href="/AdminPage/SportsManPage/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>会员列表</cite>
-
+                                <cite>用户管理</cite>
                             </a>
-                        </li>
-                        <li>
-                            <a _href="member-del.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>会员删除</cite>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="iconfont">&#xe70b;</i>
-                                <cite>会员管理</cite>
-                                <i class="iconfont nav_right">&#xe697;</i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a _href="xxx.html">
-                                        <i class="iconfont">&#xe6a7;</i>
-                                        <cite>会员列表</cite>
-
-                                    </a>
-                                </li>
-                                <li>
-                                    <a _href="xx.html">
-                                        <i class="iconfont">&#xe6a7;</i>
-                                        <cite>会员删除</cite>
-
-                                    </a>
-                                </li>
-                                <li>
-                                    <a _href="xx.html">
-                                        <i class="iconfont">&#xe6a7;</i>
-                                        <cite>等级管理</cite>
-
-                                    </a>
-                                </li>
-
-                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -191,14 +141,20 @@
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe723;</i>
-                        <cite>城市联动</cite>
+                        <cite>新闻管理</cite>
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="city.html">
+                            <a _href="/AdminPage/NewsPage/Add.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>三级地区联动</cite>
+                                <cite>新闻添加</cite>
+                            </a>
+                        </li>
+                        <li>
+                            <a _href="/AdminPage/NewsPage/Manage.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>新闻管理</cite>
                             </a>
                         </li>
                     </ul>
@@ -207,56 +163,20 @@
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe6ce;</i>
-                        <cite>系统统计</cite>
+                        <cite>报名管理</cite>
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="echarts1.html">
+                            <a _href="/AdminPage/SignUpPage/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>拆线图</cite>
+                                <cite>报名审核</cite>
                             </a>
                         </li>
                         <li>
-                            <a _href="echarts2.html">
+                            <a _href="/AdminPage/SignUpPage/Manage.aspx?type='success'">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>柱状图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts3.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>地图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts4.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>饼图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts5.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>雷达图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts6.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>k线图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts7.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>热力图</cite>
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="echarts8.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>仪表图</cite>
+                                <cite>历史记录</cite>
                             </a>
                         </li>
                     </ul>
@@ -264,14 +184,56 @@
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe6b4;</i>
-                        <cite>图标字体</cite>
+                        <cite>成绩管理</cite>
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="unicode.html">
+                            <a _href="/AdminPage/Score/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>图标对应字体</cite>
+                                <cite>成绩管理</cite>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                  <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe6b5;</i>
+                        <cite>排行榜</cite>
+                        <i class="iconfont nav_right">&#xe697;</i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a _href="/AdminPage/Rank/SelfManage.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>个人榜</cite>
+                            </a>
+                        </li>
+                         <li>
+                            <a _href="/AdminPage/Rank/Manage.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>班级榜</cite>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                 <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe6b5;</i>
+                        <cite>系统设置</cite>
+                        <i class="iconfont nav_right">&#xe697;</i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a _href="/AdminPage/AdminPage/UpdatePwd.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>密码修改</cite>
+                            </a>
+                        </li>
+                         <li>
+                            <a _href="/AdminPage/Login.aspx">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>退出</cite>
                             </a>
                         </li>
                     </ul>
@@ -298,9 +260,9 @@
     <!-- 右侧主体结束 -->
     <!-- 中部结束 -->
     <!-- 底部开始 -->
-    <div class="footer">
+   <%-- <div class="footer">
         <div class="copyright">Copyright ©2017 x-admin 2.3 All Rights Reserved  更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
-    </div>
+    </div>--%>
     <!-- 底部结束 -->
 
 </body>

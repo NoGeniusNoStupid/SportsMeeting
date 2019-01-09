@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="join clearfix" style="width: 900px; margin-left: auto; margin-right: auto">
+    <div class="join clearfix" style="width: 1100px; margin-left: auto; margin-right: auto">
         <div class="invite">
             <div>
                 <div class="layui-row">
@@ -17,6 +17,7 @@
                     <th scope="col">编号</th>
                     <th scope="col">姓名</th>
                     <th scope="col">类型</th>
+                    <th scope="col">限制</th>
                     <th scope="col">裁判</th>
                     <th scope="col">开始时间</th>
                     <th scope="col">结束时间</th>
@@ -30,6 +31,7 @@
                             <td><%# Eval("Id")%></td>
                             <td><%# Eval("Name")%></td>
                             <td><%# Eval("Type")%></td>
+                             <td><%# Eval("Limit")%></td>
                             <td><%# Eval("Referee.Name")%></td>
                             <td><%# Eval("FirstTime")%></td>
                             <td><%# Eval("FinalTime")%></td>
