@@ -27,16 +27,22 @@ namespace SportsMeeting.FrontPage
             int ItemId = Convert.ToInt32(Request.QueryString["id"]);
             int pageSize = 5;//页面记录数
             List<SignUp> list = new List<SignUp>();
+
+            int listCount = 0;
             //查询记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                list = Entity.SignUp.Where(a => a.ItemId==ItemId).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.ItemId == ItemId).ToList();
+                listCount = list.Count;
+                list=list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                list = Entity.SignUp.Where(a => a.SportsMan.Name.Contains(SreachWhere.Text) && a.ItemId == ItemId).OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.SportsMan.Name.Contains(SreachWhere.Text) && a.ItemId == ItemId).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
-            int listCount = Entity.SignUp.Where(a => a.ItemId == ItemId).Count();
+          
             //生成导航条
             string strBar = PageBar.GetFrontPageBar(pageIndex, listCount, pageSize);
             mPageBar = strBar;

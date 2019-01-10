@@ -30,18 +30,26 @@ namespace SportsMeeting.FrontPage.SelfCenter
             int manId = Convert.ToInt32(Session["ManId"]);
 
             List<SignUp> list = new List<SignUp>();
+
+
+            int listCount = 0;
             //绑定记录
             if (string.IsNullOrEmpty(SreachWhere.Text))
             {
-                list = Entity.SignUp.Where(a => a.ManId == manId).OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+
+                list = Entity.SignUp.Where(a => a.ManId == manId).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
             else
             {
-                list = Entity.SignUp.Where(a => a.ManId == manId && a.SportsItem.Name.Contains(SreachWhere.Text)).OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                list = Entity.SignUp.Where(a => a.ManId == manId && a.SportsItem.Name.Contains(SreachWhere.Text)).ToList();
+                listCount = list.Count;
+                list = list.OrderByDescending(a => a.OperTime).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
 
 
-            int listCount = Entity.SignUp.Where(a => a.ManId == manId).Count();
+  
 
             string strBar = PageBar.GetPageBarType(pageIndex, listCount, pageSize);
 

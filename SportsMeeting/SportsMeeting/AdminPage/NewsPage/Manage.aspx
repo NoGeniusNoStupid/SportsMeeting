@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>欢迎页面-X-admin2.0</title>
+    <title>运动会管理系统</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -56,7 +56,7 @@
                                 <td><%# Eval("Id")%></td>
                                 <td><%# Eval("Title")%></td>
                                 <td><%# Eval("Type")%></td>
-                                <td><%# Eval("Content")%></td>
+                                <td><%# Eval("Content").ToString().Length<=30?Eval("Content"):Eval("Content").ToString().Substring(0,30)%></td>
                                 <td><%# Eval("ClickNum")%></td>
                                 <td><%# Eval("OperTime")%></td>
                                 <td class="td-manage">

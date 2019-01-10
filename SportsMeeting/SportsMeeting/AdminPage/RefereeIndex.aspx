@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>后台登录-X-admin2.0</title>
+    <title>运动会管理系统</title>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -24,7 +24,7 @@
         <div class="left_open">
             <i title="展开左侧栏" class="iconfont">&#xe699;</i>
         </div>
-        <ul class="layui-nav left fast-add" lay-filter="">
+       <%-- <ul class="layui-nav left fast-add" lay-filter="">
             <li class="layui-nav-item">
                 <a href="javascript:;">+新增</a>
                 <dl class="layui-nav-child">
@@ -34,18 +34,17 @@
                     <dd><a onclick="x_admin_show('用户','http://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>用户</a></dd>
                 </dl>
             </li>
-        </ul>
+        </ul>--%>
         <ul class="layui-nav right" lay-filter="">
             <li class="layui-nav-item">
-                <a href="javascript:;">admin</a>
+                <a href="javascript:;">裁判：<%=pageModel.Name %></a>
                 <dl class="layui-nav-child">
                     <!-- 二级菜单 -->
-                    <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd>
-                    <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
-                    <dd><a href="./login.html">退出</a></dd>
+                    <dd><a href="/AdminPage/AdminPage/UpdatePwd.aspx?type=1"></a></dd>
+                    <dd><a href="/AdminPage/Login.aspx">退出</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item to-index"><a href="/">前台首页</a></li>
+            <li class="layui-nav-item to-index"><a href="/FrontPage/Default.aspx">前台首页</a></li>
         </ul>
 
     </div>
@@ -55,7 +54,7 @@
     <div class="left-nav">
         <div id="side-nav">
             <ul id="nav">
-                <li>
+                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe6b4;</i>
                         <cite>成绩管理</cite>
@@ -63,7 +62,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="/AdminPage/Score/Manage.aspx?typr=1">
+                            <a _href="/AdminPage/Score/Manage.aspx?type=1">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>成绩管理</cite>
                             </a>
@@ -78,15 +77,15 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="unicode.html">
+                            <a _href="/AdminPage/Rank/SelfManage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>个人榜</cite>
                             </a>
                         </li>
                          <li>
-                            <a _href="unicode.html">
+                            <a _href="/AdminPage/Rank/Manage.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>团队榜</cite>
+                                <cite>班级榜</cite>
                             </a>
                         </li>
                     </ul>
@@ -105,7 +104,7 @@
                             </a>
                         </li>
                          <li>
-                            <a _href="/AdminPage/Login.aspx">
+                            <a href="/AdminPage/Login.aspx">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>退出</cite>
                             </a>
@@ -125,7 +124,7 @@
             </ul>
             <div class="layui-tab-content">
                 <div class="layui-tab-item layui-show">
-                    <iframe src='/AdminPage/Welcome.aspx' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+                    <iframe src='/AdminPage/Empty.aspx' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
                 </div>
             </div>
         </div>
@@ -134,10 +133,7 @@
     <!-- 右侧主体结束 -->
     <!-- 中部结束 -->
     <!-- 底部开始 -->
-    <div class="footer">
-        <div class="copyright">Copyright ©2017 x-admin 2.3 All Rights Reserved  更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
-    </div>
-    <!-- 底部结束 -->
+   
 
 </body>
 </html>

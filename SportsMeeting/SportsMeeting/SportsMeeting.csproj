@@ -68,6 +68,7 @@
     <Content Include="AdminPage\AdminPage\Add.aspx" />
     <Content Include="AdminPage\AdminPage\Manage.aspx" />
     <Content Include="AdminPage\AdminPage\UpdatePwd.aspx" />
+    <Content Include="AdminPage\Empty.aspx" />
     <Content Include="AdminPage\NewsPage\ckeditor\adapters\jquery.js" />
     <Content Include="AdminPage\NewsPage\ckeditor\build-config.js" />
     <Content Include="AdminPage\NewsPage\ckeditor\ckeditor.js" />
@@ -621,6 +622,13 @@
     </Compile>
     <Compile Include="AdminPage\AdminPage\UpdatePwd.aspx.designer.cs">
       <DependentUpon>UpdatePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage\Empty.aspx.cs">
+      <DependentUpon>Empty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage\Empty.aspx.designer.cs">
+      <DependentUpon>Empty.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPage\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

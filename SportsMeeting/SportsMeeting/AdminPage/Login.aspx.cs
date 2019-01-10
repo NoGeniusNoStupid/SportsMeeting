@@ -35,7 +35,7 @@ namespace SportsMeeting.AdminPage
             else
             {
                 //查询数据
-                var referee = Entity.Referee.FirstOrDefault(a => a.Name == name && a.Pwd == pwd);
+                var referee = Entity.Referee.FirstOrDefault(a => a.Account == name && a.Pwd == pwd);
                 if (referee == null)
                 {
                     Message("用户名或密码错误！");
