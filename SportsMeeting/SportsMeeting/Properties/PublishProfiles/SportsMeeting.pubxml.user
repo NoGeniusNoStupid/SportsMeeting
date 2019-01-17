@@ -1,0 +1,1672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>F:\WebApp\运动会管理系统</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdminPage/AdminPage/Add.aspx">
+      <publishTime>01/10/2019 11:49:05</publishTime>
+    </File>
+    <File Include="AdminPage/AdminPage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/AdminPage/UpdatePwd.aspx">
+      <publishTime>01/10/2019 11:49:42</publishTime>
+    </File>
+    <File Include="AdminPage/css/font.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/css/xadmin.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/Empty.aspx">
+      <publishTime>01/10/2019 11:53:31</publishTime>
+    </File>
+    <File Include="AdminPage/fonts/iconfont.eot">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/fonts/iconfont.svg">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/fonts/iconfont.ttf">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/fonts/iconfont.woff">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/images/aiwrap.png">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/images/bg.png">
+      <publishTime>01/04/2019 16:15:43</publishTime>
+    </File>
+    <File Include="AdminPage/Index.aspx">
+      <publishTime>01/10/2019 11:49:25</publishTime>
+    </File>
+    <File Include="AdminPage/js/jquery.min.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/js/xadmin.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/js/xcity.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/layui.css">
+      <publishTime>01/10/2019 11:46:09</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/layui.mobile.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/code.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/laydate/default/laydate.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/icon-ext.png">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/icon.png">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/layer.css">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/loading-0.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/loading-1.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/css/modules/layer/default/loading-2.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/font/iconfont.eot">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/font/iconfont.svg">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/font/iconfont.ttf">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/font/iconfont.woff">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/0.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/1.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/10.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/11.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/12.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/13.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/14.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/15.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/16.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/17.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/18.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/19.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/2.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/20.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/21.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/22.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/23.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/24.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/25.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/26.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/27.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/28.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/29.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/3.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/30.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/31.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/32.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/33.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/34.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/35.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/36.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/37.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/38.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/39.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/4.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/40.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/41.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/42.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/43.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/44.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/45.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/46.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/47.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/48.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/49.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/5.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/50.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/51.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/52.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/53.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/54.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/55.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/56.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/57.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/58.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/59.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/6.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/60.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/61.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/62.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/63.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/64.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/65.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/66.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/67.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/68.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/69.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/7.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/70.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/71.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/8.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/images/face/9.gif">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/carousel.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/code.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/element.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/flow.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/form.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/jquery.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/laydate.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/layedit.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/layer.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/laypage.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/laytpl.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/mobile.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/table.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/tree.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/upload.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/lay/modules/util.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/layui.all.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/lib/layui/layui.js">
+      <publishTime>05/23/2018 14:56:06</publishTime>
+    </File>
+    <File Include="AdminPage/Login.aspx">
+      <publishTime>01/10/2019 11:49:23</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/Add.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/adapters/jquery.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/build-config.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/CHANGES.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/ckeditor.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/config.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/contents.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/af.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ar.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/az.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/bg.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/bn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/bs.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/cs.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/cy.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/da.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/de-ch.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/de.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/el.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/en-au.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/en-ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/en-gb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/en.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/eo.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/es-mx.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/es.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/et.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/eu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/fa.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/fi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/fo.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/fr-ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/fr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/gl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/gu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/he.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/hi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/hr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/hu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/id.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/is.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/it.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ja.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ka.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/km.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ko.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ku.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/lt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/lv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/mk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/mn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ms.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/nb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/nl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/no.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/oc.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/pl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/pt-br.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/pt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ro.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ru.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/si.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sq.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sr-latn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/sv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/th.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/tr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/tt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/ug.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/uk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/vi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/zh-cn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/lang/zh.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/LICENSE.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/af.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/az.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/da.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/de.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/el.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/en.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/es.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/et.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/he.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/id.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/it.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/km.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/no.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/si.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/th.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/about/dialogs/about.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/about/dialogs/logo_ckeditor.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/clipboard/dialogs/paste.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/dialog/dialogDefinition.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/icons.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/icons_hidpi.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/image/dialogs/image.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/image/images/noimage.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/link/dialogs/anchor.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/link/dialogs/link.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/link/images/anchor.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/link/images/hidpi/anchor.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/magicline/images/hidpi/icon.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/magicline/images/icon-rtl.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/magicline/images/icon.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/pastefromword/filter/default.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/CHANGELOG.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/dialogs/dialog.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/dialogs/options.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/dialogs/toolbar.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/LICENSE.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/README.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/af.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ar.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/az.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/bg.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/cs.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/cy.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/da.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/de.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/el.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/en-au.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/en.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/eo.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/es.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/et.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/eu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/fa.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/fi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/fr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/gl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/he.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/hr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/hu.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/id.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/it.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ja.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/km.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ko.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ku.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/lt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/lv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/nb.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/nl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/no.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/oc.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/pl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/pt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ro.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ru.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/si.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/sk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/sl.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/sq.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/sv.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/th.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/tr.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/tt.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/ug.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/uk.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/vi.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/zh.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/specialchar/dialogs/specialchar.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/table/dialogs/table.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/tableselection/styles/tableselection.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/tabletools/dialogs/tableCell.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/widget/images/handle.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/dialogs/ciframe.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/dialogs/tmpFrameset.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/dialogs/wsc.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/dialogs/wsc.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/dialogs/wsc_ie.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/LICENSE.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/README.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/README.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/css/samples.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/github-top.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/header-bg.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/header-separator.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/logo.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/logo.svg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/img/navigation-tip.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/index.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/js/sample.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/js/sf.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/ajax.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/api.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/appendto.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/assets/inlineall/logo.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/assets/posteddata.php">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/assets/sample.jpg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/assets/uilanguages/languages.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/datafiltering.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/dialog/assets/my_dialog.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/dialog/dialog.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/divreplace.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/enterkey/enterkey.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/htmlwriter/outputforflash.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/htmlwriter/outputhtml.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/index.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/inlineall.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/inlinebycode.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/inlinetextarea.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/jquery.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/magicline/magicline.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/readonly.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/replacebyclass.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/replacebycode.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/sample.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/sample.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/sample_posteddata.php">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/tabindex.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/toolbar/toolbar.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/uicolor.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/uilanguages.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/wysiwygarea/fullpage.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/old/xhtmlstyle.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/css/fontello.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/config.json">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/fontello.eot">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/fontello.svg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/fontello.ttf">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/fontello.woff">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/index.html">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/dialog.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/dialog_ie.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/dialog_ie8.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/dialog_iequirks.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/editor.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/editor_gecko.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/editor_ie.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/editor_ie8.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/editor_iequirks.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/icons.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/icons_hidpi.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/arrow.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/close.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/hidpi/close.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/hidpi/lock.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/hidpi/refresh.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/lock-open.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/lock.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/refresh.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/images/spinner.gif">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/skins/moono-lisa/readme.md">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/ckeditor/styles.js">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="AdminPage/NewsPage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Rank/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Rank/SelfManage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/RefereeIndex.aspx">
+      <publishTime>01/10/2019 13:35:00</publishTime>
+    </File>
+    <File Include="AdminPage/RefereePage/Add.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/RefereePage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Score/AddFinalScore.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Score/AddFristScore.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Score/FinalDetail.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Score/ItemDetail.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/Score/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/SignUpPage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:06</publishTime>
+    </File>
+    <File Include="AdminPage/SportsItemPage/Add.aspx">
+      <publishTime>01/10/2019 11:49:07</publishTime>
+    </File>
+    <File Include="AdminPage/SportsItemPage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:07</publishTime>
+    </File>
+    <File Include="AdminPage/SportsManPage/Manage.aspx">
+      <publishTime>01/10/2019 11:49:07</publishTime>
+    </File>
+    <File Include="AdminPage/Welcome.aspx">
+      <publishTime>01/10/2019 13:33:43</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/04/2019 15:39:11</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/04/2019 15:39:11</publishTime>
+    </File>
+    <File Include="bin/SportsMeeting.dll">
+      <publishTime>01/11/2019 13:40:55</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>01/04/2019 15:39:18</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/css/reset.css">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/css/responsive.css">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/css/thems.css">
+      <publishTime>01/09/2019 15:55:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/bg_a.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f1.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f2.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f3.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f4.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f5.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f_1.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f_2.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f_3.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f_4.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/f_5.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon1.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon10.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon11.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon12.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon13.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon2.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon3.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon4.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon5.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon6.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon7.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon8.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/icon9.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/logo.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/logo2.png">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/movie.ogg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/nav_ico.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/next.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p1.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p2.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p3.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p4.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p5.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/p6.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/images/prev.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/js/banner.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/js/jquery-1.8.3.min.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/js/js_z.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/flexslider.css">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/images/banner.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/images/nav_ico.png">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/index.html">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/jquery-1.9.1.min.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/jquery.flexslider-min.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/plugins/FlexSlider/jquery.flexslider.js">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/banner.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/banner1.jpg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/banner2.jpg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/banner_a.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic10.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic2.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic3.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic4.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic5.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic6.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic7.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic8.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/pic9.jpg">
+      <publishTime>01/04/2019 16:15:24</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/运动1_副本.jpg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/Assets/upload/运动4_副本.jpg">
+      <publishTime>01/07/2019 00:52:19</publishTime>
+    </File>
+    <File Include="FrontPage/ClassRankPage.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/Default.aspx">
+      <publishTime>01/09/2019 15:24:17</publishTime>
+    </File>
+    <File Include="FrontPage/Login.aspx">
+      <publishTime>01/08/2019 16:38:25</publishTime>
+    </File>
+    <File Include="FrontPage/Main.Master">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/NewsDetail.aspx">
+      <publishTime>01/09/2019 15:55:16</publishTime>
+    </File>
+    <File Include="FrontPage/NewsPage.aspx">
+      <publishTime>01/09/2019 15:42:35</publishTime>
+    </File>
+    <File Include="FrontPage/OnlineSignUp.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/Register.aspx">
+      <publishTime>01/08/2019 16:38:08</publishTime>
+    </File>
+    <File Include="FrontPage/SelfCenter/MyScore.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/SelfCenter/MySignUp.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/SelfRank.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/SportItemDetail.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="FrontPage/SportItemResults.aspx">
+      <publishTime>01/10/2019 09:12:50</publishTime>
+    </File>
+    <File Include="Handel/CheckCode.ashx">
+      <publishTime>01/04/2019 16:30:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/04/2019 15:39:18</publishTime>
+    </File>
+    <File Include="PageBase.aspx">
+      <publishTime>01/04/2019 15:53:12</publishTime>
+    </File>
+    <File Include="SportsMeeting.edmx.diagram">
+      <publishTime>01/09/2019 13:42:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/11/2019 13:40:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

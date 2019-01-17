@@ -75,8 +75,8 @@
                             </div>
                             <div class="hx_m clearfix">
                                 <ul class="hx_ml">
-                                    <li><a href="/SelfCenter/MySignUp.aspx">报名结果</a></li>
-                                    <li><a href="/SelfCenter/MyScore.aspx">我的成绩</a></li>
+                                    <li><a href="MySignUp.aspx">报名结果</a></li>
+                                    <li><a href="MyScore.aspx">我的成绩</a></li>
                                 </ul>
                                 <div class="hx_mr">
                                     <img src="Assets/upload/pic3.jpg" alt="" />

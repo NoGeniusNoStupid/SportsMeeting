@@ -579,8 +579,8 @@
     <Content Include="FrontPage\NewsPage.aspx" />
     <Content Include="FrontPage\OnlineSignUp.aspx" />
     <Content Include="FrontPage\Register.aspx" />
-    <Content Include="FrontPage\SelfCenter\MyScore.aspx" />
-    <Content Include="FrontPage\SelfCenter\MySignUp.aspx" />
+    <Content Include="FrontPage\MyScore.aspx" />
+    <Content Include="FrontPage\MySignUp.aspx" />
     <Content Include="FrontPage\SelfRank.aspx" />
     <Content Include="FrontPage\SportItemDetail.aspx" />
     <Content Include="FrontPage\SportItemResults.aspx" />
@@ -819,18 +819,18 @@
     <Compile Include="FrontPage\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrontPage\SelfCenter\MyScore.aspx.cs">
+    <Compile Include="FrontPage\MyScore.aspx.cs">
       <DependentUpon>MyScore.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrontPage\SelfCenter\MyScore.aspx.designer.cs">
+    <Compile Include="FrontPage\MyScore.aspx.designer.cs">
       <DependentUpon>MyScore.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrontPage\SelfCenter\MySignUp.aspx.cs">
+    <Compile Include="FrontPage\MySignUp.aspx.cs">
       <DependentUpon>MySignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrontPage\SelfCenter\MySignUp.aspx.designer.cs">
+    <Compile Include="FrontPage\MySignUp.aspx.designer.cs">
       <DependentUpon>MySignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontPage\SelfRank.aspx.cs">
@@ -937,6 +937,7 @@
     <Content Include="SportsMeeting.edmx.diagram">
       <DependentUpon>SportsMeeting.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\SportsMeeting.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

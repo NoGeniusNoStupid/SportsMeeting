@@ -22,7 +22,7 @@
         <span class="layui-breadcrumb">
             <a href="../Welcome.aspx">首页</a>
             <a>
-                <cite>裁判管理</cite></a>
+                <cite>管理员管理</cite></a>
         </span>
         <a class="layui-btn layui-btn-small" style="line-height: 1.6em; margin-top: 3px; float: right" href="javascript:location.replace(location.href);" title="刷新">
             <i class="layui-icon" style="line-height: 30px">ဂ</i></a>
@@ -30,7 +30,7 @@
     <div class="x-body">
         <form class="layui-form layui-col-md12 x-so" runat="server">
             <div class="layui-row">
-                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入裁判姓名" lay-verify="Name" autocomplete="off" class="layui-input"  Width="255px"></asp:TextBox>
+                <asp:TextBox ID="SreachWhere" runat="server" placeholder="请输入账号" lay-verify="Name" autocomplete="off" class="layui-input"  Width="255px"></asp:TextBox>
                 <asp:Button class="layui-btn" lay-filter="add" lay-submit="" ID="Sreach" runat="server" Text="查询" OnClick="Sreach_Click" />
             </div>
             <xblock>

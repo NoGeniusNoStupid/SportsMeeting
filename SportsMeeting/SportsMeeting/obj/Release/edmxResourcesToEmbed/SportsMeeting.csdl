@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SportsMeetingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClickNum" Type="Int32" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Referee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sex" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SportsItem" Relationship="Self.FK_SportsItem_Referee" FromRole="Referee" ToRole="SportsItem" />
+  </EntityType>
+  <EntityType Name="SignUp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemId" Type="Int32" />
+    <Property Name="ManId" Type="Int32" />
+    <Property Name="FirstScore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FinalScore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RanK" Type="Int32" />
+    <Property Name="FinalRanK" Type="Int32" />
+    <Property Name="IsFinal" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Detail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SportsItem" Relationship="Self.FK_SignUp_SportsItem" FromRole="SignUp" ToRole="SportsItem" />
+    <NavigationProperty Name="SportsMan" Relationship="Self.FK_SignUp_SportsMan" FromRole="SignUp" ToRole="SportsMan" />
+  </EntityType>
+  <EntityType Name="SportsItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Limit" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RefereeId" Type="Int32" />
+    <Property Name="FirstTime" Type="DateTime" Precision="3" />
+    <Property Name="FinalTime" Type="DateTime" Precision="3" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Referee" Relationship="Self.FK_SportsItem_Referee" FromRole="SportsItem" ToRole="Referee" />
+    <NavigationProperty Name="SignUp" Relationship="Self.FK_SignUp_SportsItem" FromRole="SportsItem" ToRole="SignUp" />
+    <Property Name="Rule" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Num" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SportsMan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sex" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OperTime" Type="DateTime" Precision="3" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SignUp" Relationship="Self.FK_SignUp_SportsMan" FromRole="SportsMan" ToRole="SignUp" />
+  </EntityType>
+  <Association Name="FK_SportsItem_Referee">
+    <End Role="Referee" Type="Self.Referee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SportsItem" Type="Self.SportsItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Referee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SportsItem">
+        <PropertyRef Name="RefereeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SignUp_SportsItem">
+    <End Role="SportsItem" Type="Self.SportsItem" Multiplicity="0..1" />
+    <End Role="SignUp" Type="Self.SignUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SportsItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SignUp">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SignUp_SportsMan">
+    <End Role="SportsMan" Type="Self.SportsMan" Multiplicity="0..1" />
+    <End Role="SignUp" Type="Self.SignUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SportsMan">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SignUp">
+        <PropertyRef Name="ManId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SportsMeetingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <EntitySet Name="News" EntityType="Self.News" />
+    <EntitySet Name="Referee" EntityType="Self.Referee" />
+    <EntitySet Name="SignUp" EntityType="Self.SignUp" />
+    <EntitySet Name="SportsItem" EntityType="Self.SportsItem" />
+    <EntitySet Name="SportsMan" EntityType="Self.SportsMan" />
+    <AssociationSet Name="FK_SportsItem_Referee" Association="Self.FK_SportsItem_Referee">
+      <End Role="Referee" EntitySet="Referee" />
+      <End Role="SportsItem" EntitySet="SportsItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SignUp_SportsItem" Association="Self.FK_SignUp_SportsItem">
+      <End Role="SportsItem" EntitySet="SportsItem" />
+      <End Role="SignUp" EntitySet="SignUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SignUp_SportsMan" Association="Self.FK_SignUp_SportsMan">
+      <End Role="SportsMan" EntitySet="SportsMan" />
+      <End Role="SignUp" EntitySet="SignUp" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
